@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Pengajuan Jabatan</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Pengajuan Jabatan</h1>
+        <form id="jabatanForm">
+            <div class="form-group">
+                <label for="desa">Asal Desa:</label>
+                <input type="text" id="desa" name="desa" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nama">Nama Peserta:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomerUjian">Nomer Ujian Peserta:</label>
+                <input type="text" id="nomerUjian" name="nomerUjian" required>
+            </div>
+
+            <div class="form-group">
+                <label for="jabatan">Jabatan Yang Dilamar:</label>
+                <select id="jabatan" name="jabatan" required>
+                    <option value="Sekretaris Desa">Sekretaris Desa</option>
+                    <option value="Kepala Dusun">Kepala Dusun</option>
+                    <option value="Perangkat Desa">Perangkat Desa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nilaiPemerintahan">Nilai Pengetahuan Pemerintahan:</label>
+                <input type="number" id="nilaiPemerintahan" name="nilaiPemerintahan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilaiAgama">Nilai Agama:</label>
+                <input type="number" id="nilaiAgama" name="nilaiAgama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilaiUmum">Nilai Pengetahuan Umum:</label>
+                <input type="number" id="nilaiUmum" name="nilaiUmum" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilaiIndonesia">Nilai Bahasa Indonesia:</label>
+                <input type="number" id="nilaiIndonesia" name="nilaiIndonesia" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilaiKomputer">Nilai Pengetahuan Komputer:</label>
+                <input type="number" id="nilaiKomputer" name="nilaiKomputer" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilaiPraktek">Nilai Praktek Komputer:</label>
+                <input type="number" id="nilaiPraktek" name="nilaiPraktek" required>
+            </div>
+
+            <button type="button" onclick="cekKelayakan()">Cek Kelayakan</button>
+        </form>
+
+        <div id="hasilTes" class="hasil-tes"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
